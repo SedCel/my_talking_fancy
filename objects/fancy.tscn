@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dxtybkrymjo5b"]
+
+[ext_resource type="Script" uid="uid://emu1jomkdo4r" path="res://scripts/fancy.gd" id="1_367ir"]
+[ext_resource type="Texture2D" uid="uid://dkta8lutecffq" path="res://sprites/FancyStandart.png" id="1_ulpal"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2dd1r"]
+size = Vector2(239, 315)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2dd1r"]
+radius = 150.33296
+
+[node name="Fancy" type="CharacterBody2D" unique_id=660183655]
+script = ExtResource("1_367ir")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=483145635]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_2dd1r")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=236058084]
+texture = ExtResource("1_ulpal")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=587552809]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=162615798]
+shape = SubResource("CircleShape2D_2dd1r")

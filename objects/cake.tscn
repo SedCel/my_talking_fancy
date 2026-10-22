@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bbkxqe5fy5h4u"]
+
+[ext_resource type="Script" path="res://scripts/cake.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://4j5604umnyub" path="res://sprites/Cake.png" id="1_t55t7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2dd1r"]
+radius = 213.00235
+
+[node name="Cake" type="Area2D" unique_id=1126181680 groups=["food"]]
+script = ExtResource("1_script")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1452952354]
+texture = ExtResource("1_t55t7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1789502750]
+position = Vector2(3, 96)
+shape = SubResource("CircleShape2D_2dd1r")

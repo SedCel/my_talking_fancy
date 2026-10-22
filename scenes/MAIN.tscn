@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cuodctjuaj5bq"]
+
+[ext_resource type="Script" uid="uid://dggio6sggynfg" path="res://scripts/game.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://by5ygjkr1fjyg" path="res://sprites/jopabg.jpg" id="2_08hpn"]
+[ext_resource type="PackedScene" uid="uid://dxtybkrymjo5b" path="res://objects/fancy.tscn" id="2_apk53"]
+[ext_resource type="PackedScene" uid="uid://bgvlvdk7jpru8" path="res://objects/floor.tscn" id="3_imghw"]
+
+[node name="Main" type="Control" unique_id=448529244]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="BackGround" type="Sprite2D" parent="." unique_id=1511380051]
+position = Vector2(616.50024, 311.00003)
+scale = Vector2(2.166107, 2.1999989)
+texture = ExtResource("2_08hpn")
+
+[node name="Fancy" parent="." unique_id=660183655 instance=ExtResource("2_apk53")]
+position = Vector2(580.00006, 258)
+scale = Vector2(0.52, 0.5105361)
+
+[node name="Floor4" parent="." unique_id=1278158057 instance=ExtResource("3_imghw")]
+position = Vector2(548, -30)
+rotation = -1.575592
+scale = Vector2(0.4316761, -101.3342)
+skew = -0.0010070801
+
+[node name="Floor" parent="." unique_id=838699386 instance=ExtResource("3_imghw")]
+position = Vector2(760, 630)
+scale = Vector2(24.96, 0.99999994)
+
+[node name="Floor2" parent="." unique_id=1886024662 instance=ExtResource("3_imghw")]
+position = Vector2(1224, 570)
+rotation = 3.1415927
+scale = Vector2(0.8226583, -75.84768)
+
+[node name="Floor3" parent="." unique_id=1971329706 instance=ExtResource("3_imghw")]
+position = Vector2(-32, 334)
+rotation = -3.1415925
+scale = Vector2(0.4113294, -34.476234)
